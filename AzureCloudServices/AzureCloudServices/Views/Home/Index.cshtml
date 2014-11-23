@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Azure Cloud Services Lab 1";
+}
+
+<div class="jumbotron">
+    <h1>Azure Cloud Services Lab 1</h1>
+    <p class="lead">An ASP.Net MVC application is required which allows a user to calculate the cost of hosting a cloud service on Azure for a year.
+
+With regards to an Azure cloud service two items contribute to the price:
+1.	The instance size
+2.	The number of instances
+</p>
+</div>
+
+    <div class=".col-xs-12 .col-sm-6 .col-lg-8">
+    <h2>Getting started</h2>
+    <p>
+        Sizes A6 and A7 are special sizes for memory intensive applications. Multiply the number of instances by the price of an instance (based on its size) to determine the cost of an Azure cloud service for one hour.
+
+        The web application should use a model class to represent an Azure Service. It should have logic to calculate the yearly cost. Once the application runs have a view display which allows the user to input the number of instances and instance size (for a dropdown) and request the cost to be calculated. Validate inputs. A cloud service must have at least 2 instances according to the Azure Compute SLA. When the calculation is requested re-direct to a confirmation page where the details of the service and the yearly cost are displayed. Take into account if the year is a leap year or not.
+    </p>
+</div>

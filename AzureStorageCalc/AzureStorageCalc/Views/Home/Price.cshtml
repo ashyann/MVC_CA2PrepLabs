@@ -1,0 +1,27 @@
+﻿@model AzureStorageCalc.Models.StorageAccount
+
+<div>
+    <h4>StorageAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StorageSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StorageSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

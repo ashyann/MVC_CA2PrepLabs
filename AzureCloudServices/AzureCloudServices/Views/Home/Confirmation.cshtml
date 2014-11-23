@@ -1,0 +1,16 @@
+﻿@model AzureCloudServices.Models.AzureCloudService
+
+@{
+    ViewBag.Title = "Yearly Cost";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<fieldset>
+    <legend></legend>
+    <div class="display-label">Cost: €  @Html.DisplayFor(model => model.Cost) </div>
+</fieldset>
+
+<div>
+    @Html.ActionLink("Back", "Calculate")
+</div>

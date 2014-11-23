@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Azure Storage Calculator Lab 2</h1>
+    <p class="lead">An ASP.Net MVC application is required which allows a user to calculate the cost of storage of data in an Azure storage account per month.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            With regards to Azure storage cost is based on average GB of storage used per month, and based on whether the storage is geographically redundant or locally redundant. Geographical redundancy is the default. Cost also depends on whether the total storage is below or above 1 TB (1000 GB) per month.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>So for instance 500GB of locally redundant storage would cost $0.093 x 500, whereas 1500 GB of geographically redundant storage would cost $0.125 x 1000 + $0.11 * 500.
+
+The web application should use a model class and have logic to calculate the storage cost. Once the application runs have a view display which allows the user to input the GB of storage used (>0) and the type of redundancy required and request the cost to be calculated. When the calculation is requested display the monthly cost.
+
+Deploy the application on Azure using 2 small instances.
+</p>
+    </div>
+</div>
